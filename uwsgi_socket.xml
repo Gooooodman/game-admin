@@ -1,0 +1,14 @@
+<uwsgi> 
+  <socket>0.0.0.0:3001</socket> 
+  <listen>20</listen> 
+  <master>true</master> 
+  <pidfile>/usr/local/services/nginx/uwsgi.pid</pidfile> 
+  <processes>2</processes> 
+  <module>django_wsgi</module>
+  <pythonpath>/data</pythonpath>  
+  <profiler>true</profiler> 
+  <memory-report>true</memory-report> 
+  <enable-threads>true</enable-threads> 
+  <logdate>true</logdate> 
+  <limit-as>6048</limit-as> 
+</uwsgi>

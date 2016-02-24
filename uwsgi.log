@@ -1,0 +1,53 @@
+*** Starting uWSGI 1.9.6 (64bit) on [Thu Nov  5 10:48:52 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-16) on 05 November 2015 10:30:46
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: Zabbix_server
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /data/django
+detected binary path: /usr/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7746
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+uwsgi socket 0 bound to TCP address 127.0.0.1:199 fd 3
+Python version: 2.6.6 (r266:84292, Jul 23 2015, 15:22:56)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-11)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xc508b0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 290784 bytes (283 KB) for 4 cores
+*** Operational MODE: preforking ***
+  File "./django_wsgi.py", line 8
+    from django.core.handlers.wsgiimport WSGIHandler
+                                                   ^
+SyntaxError: invalid syntax
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 63152, cores: 1)
+spawned uWSGI worker 2 (pid: 63153, cores: 1)
+spawned uWSGI worker 3 (pid: 63154, cores: 1)
+spawned uWSGI worker 4 (pid: 63155, cores: 1)
+*** Starting uWSGI 1.9.6 (64bit) on [Thu Nov  5 10:49:56 2015] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-16) on 05 November 2015 10:30:46
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: Zabbix_server
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /data/django
+detected binary path: /usr/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7746
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+probably another instance of uWSGI is running on the same address (127.0.0.1:199).
+bind(): Address already in use [core/socket.c line 711]
